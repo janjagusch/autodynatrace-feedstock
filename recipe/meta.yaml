@@ -1,5 +1,5 @@
 {% set name = "autodynatrace" %}
-{% set version = "1.0.82" %}
+{% set version = "1.0.84" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/autodynatrace-{{ version }}.tar.gz
-  sha256: b380473bbe8bfde21d1aea4c39c6e2fb894fc21b0852b96c033082ab7c8e2c01
+  sha256: 010b1b9044c8808a0d199ce333faa3654bb1953c010213233abb64f618dca197
 
 build:
   number: 0
