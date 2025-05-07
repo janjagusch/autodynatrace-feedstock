@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: autodynatrace
-  version: 2.0.0
+  version: 2.1.1
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/autodynatrace-${{ version }}.tar.gz
-  sha256: b503e7c46c67c316a2986f83b96692870d82ac7c9d28df001ea62f7cff9a41a2
+  sha256: 0b75732f541bcb2af57ef87342b238e8cb47b5cc96bcc6fa2ff9d7dfb17ee490
 
 build:
   number: 2
@@ -21,6 +21,7 @@ requirements:
   host:
     - pip
     - python ${{ python_min }}.*
+    - hatch
   run:
     - autowrapt >=1.0
     - oneagent-sdk >=1.3.0
